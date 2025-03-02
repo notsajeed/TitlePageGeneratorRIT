@@ -1,0 +1,241 @@
+body {
+    font-family:Roboto, Arial;
+    background-color: #000000;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #020202;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(230, 0, 255, 0.9);
+    color: white;
+    background: transparent;
+    height: auto;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 29px;
+    margin-bottom: 39px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: Roboto,Arial;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #b700ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    font-family: Roboto,Arial;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.btn:hover {
+    background-color: #540d62;
+}
+
+.preview {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    background-color: #ffffff;
+    width: 210mm;
+    height: 297mm;
+    box-sizing: border-box;
+    color: black;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.grid-preview{
+  display: grid;
+  justify-content: center;
+}
+
+
+.logo {
+   margin-top: 50px;
+   width: 180px;
+}
+
+.topSection{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  
+}
+
+.collageName{
+    color: #000000;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 160px;
+}
+
+.collageAdress{
+    font-size: 26px;
+    font-weight: 500;
+    color: rgb(255, 72, 0);
+    margin-top: 1px;
+}
+
+.logoset{
+    position: absolute;
+    top: 0;
+    left: 50px
+}
+
+.middleSection{
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 250px;   
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+.displaySubmissionType{
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.normalText{
+    font-size: 26px;
+    font-weight: 600;
+    color:  rgb(0, 0, 0);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.displayTopic{
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(38, 0, 255);
+    margin-top: 5px;
+}
+
+.displaySubjectName{
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(255, 72, 0);
+    margin-top: 8px;
+}
+
+.displaySubmitters{
+    font-size: 26px;
+    font-weight: 600;
+    color:rgb(255, 72, 0);
+    margin-top: -20px;
+    text-align: center;
+}
+
+.displayDescription{
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-bottom: 50px;
+}
+
+.bottomSection{
+   background-color: rgb(255, 255, 255);
+   bottom: 0;
+   margin: 0;
+   padding: 0;
+   position: absolute;
+   align-self: center;
+   left: 0;
+   right: 0;
+   word-wrap: break-word;
+   overflow-wrap: break-word;
+   margin-left: 60px;
+   margin-right: 60px;
+}
+
+.displayFacultyName{
+    font-size: 29px;
+    font-weight: 600;
+    color: rgb(0, 0, 255);
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.displayFacultyDesignation{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin-top: 0px;
+    text-align: center;
+}
+
+.displayBranch{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(255, 72, 0);
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.preview h2{
+    margin: 0;
+    padding: 0;
+}
+
+.year{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin-top: 0px;
+    text-align: center;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Page Maker</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="TPG.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h1>Ramaiah Institute of Technology Title Page Maker</h1>
+    <form id="titleForm">
+        <div class="form-group">
+            <label for="submissionType">Submission Type (Report or Assignment)</label>
+            <select id="submissionType" name="submissionType" required>
+                <option value="Report On">Report</option>
+                <option value="Assignment">Assignment</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="subjectName">Subject Name in Full</label>
+            <input type="text" id="subjectName" name="subjectName" required>
+        </div>
+        <div class="form-group">
+            <label for="subjectCode">Subject Code</label>
+            <input type="text" id="subjectCode" name="subjectCode" required>
+        </div>
+        <div class="form-group">
+            <label for="branch">Branch/Department Name in Full</label>
+            <input type="text" id="branch" name="branch" required>
+        </div>
+        <div class="form-group">
+            <label for="topicName">Topic Name in Full</label>
+            <input type="text" id="topicName" name="topicName" required>
+        </div>
+        <div class="form-group">
+            <label for="topicDes">Topic Description</label>
+            <input type="text" id="topicDes" name="topicDes" required>
+        </div>
+        <div class="form-group">
+            <label for="submitters">Submitters (Names and USNs)</label>
+            <div id="submittersList">
+                <input type="text" name="submitter" class="submitter" required>
+            </div>
+            <button type="button" class="btn" onclick="addSubmitter()">Add More Submitters</button>
+        </div>
+        <div class="form-group">
+            <label for="facultyName">Faculty Name (with title e.g., Mr., Dr.)</label>
+            <input type="text" id="facultyName" name="facultyName" required>
+        </div>
+        <div class="form-group">
+            <label for="facultyDesignation">Faculty Designation</label>
+            <input type="text" id="facultyDesignation" name="facultyDesignation" required>
+        </div>
+        <div class="form-group">
+            <label for="startYear">Start Year</label>
+            <input type="text" id="startYear" name="startYear" required>
+        </div>
+        <div class="form-group">
+            <label for="endYear">End Year</label>
+            <input type="text" id="endYear" name="endYear" required>
+        </div>
+        <button type="button" class="btn" onclick="generatePreview()">Generate Preview</button>
+        <button type="button" class="btn" onclick="downloadContainer()">DOWNLOAD</button>
+    </form>
+
+    <div class="preview" id="preview" style="display: none;">
+        <div class="grid-preview">
+            <div class="topSection">
+                <p class="collageName">RAMAIAH INSTITUE OF TECHNOLOGY</p>
+                <p class="collageAdress">MSR Nagar Bengaluru,Karnataka 560054</p>
+                <div class="logoset">
+                    <img src="images.png" class="logo">
+                </div>
+                
+            </div>
+            <div class="middleSection">
+                <p class="displaySubmissionType" id="displaySubmissionType">On</p>
+                <p class="displayTopic" id="displayTopic"></p>
+                <p class="normalText">Subject Of</p>
+                <p class="displaySubjectName" id="displaySubjectName"></p>
+                <p class="displayDescription" id="displayDescription"></p>
+                <h2>Submitted By</h2>
+                <p class="displaySubmitters" id="displaySubmitters"></p>
+            </div>
+            <div class="bottomSection">
+                <h3 style="margin: 0px;">Under The Guidence Of</h3>
+                <h2  style="margin: 0px;">Faculty In Charge</h2>
+                <p class="displayFacultyName" id="displayFacultyName"></p>
+                <p class="displayFacultyDesignation" id="displayFacultyDesignation"></p>
+                <p class="displayBranch" id="displayBranch"></p>
+                <h2>Ramaiah Institute of Technology</h2>
+                <p class="year"><strong>Academic Year:</strong> <span id="displayStartYear"></span> - <span id="displayEndYear"></span></p>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+
+<script src="TPG.js">
+</script>
+
+</body>
+</html>
+
+</html>
