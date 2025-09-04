@@ -14,10 +14,10 @@ function generatePreview() {
     document.getElementById('displayTopic').innerText = document.getElementById('topicName').value;
     document.getElementById('displayDescription').innerText = document.getElementById('topicDes').value;
     document.getElementById('displaySubjectName').innerText = `${document.getElementById('subjectName').value} (${document.getElementById('subjectCode').value})`;
-    
+
     const submitters = Array.from(document.querySelectorAll('.submitter'))
-    .map(input => input.value)
-    .join('<br>');
+        .map(input => input.value)
+        .join('<br>');
 
     document.getElementById('displaySubmitters').innerHTML = `<br>${submitters}`;
 
